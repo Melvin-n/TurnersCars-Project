@@ -4,16 +4,9 @@ import '../css/homepage.css'
 export default function Homepage() {
   return (
     <div>
-      <div id='topnav'>
-          <ul id='page-links-nav'>
-              <li className='page-links-nav-item'>Find a car</li>
-              <li className='page-links-nav-item'><a href='/sell'>Sell a car</a></li>
-              <li className='page-links-nav-item'>Live auctions</li>
-          </ul>
-      </div>
-
       <div id='homepage-main'>
         <div id='left-side-main'>
+          <img src='../../public/background-car.jpg' alt=''></img>
           <h1 id='homepage-title'>Turners Cars</h1>
           <p>Turners Cars is the largest used car network in New Zealand with 19 car dealer locations nationwide. 
           With a huge range of around 3,000 cars for sale (and 1,500 being made ready for sale at any one time) 

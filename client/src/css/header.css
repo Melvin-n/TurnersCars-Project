@@ -1,0 +1,52 @@
+#topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+#contact-details-nav {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 6vw;
+
+    width: 50%;
+    font-size: 1.5vw;
+}
+
+#page-links-nav {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page-links-nav-item {
+    border-bottom: 2px solid var(--message-blue-theme);
+    height: 6vh;
+    width: 100%;
+    font-size: 1.7vw;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+
+}
+
+.page-links-nav-item:hover {
+    border-bottom: 2px solid var(--light-blue-theme);
+    background-color: rgba(180, 180, 180, 0.849);
+
+    gap: 6vw;
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+    gap: 6vw;
+}

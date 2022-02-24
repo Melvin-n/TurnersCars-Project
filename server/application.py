@@ -10,9 +10,13 @@ from tensorflow import keras
 from keras.models import Sequential, load_model
 from keras.models import load_model
 from keras.preprocessing.image import ImageDataGenerator, img_to_array
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 
 import chatbot
+import discovery as ibmdiscovery
 
 application = Flask(__name__)
 CORS(application)
@@ -76,6 +80,19 @@ def predict():
     }
     return jsonify(response)
 
+
+# discovery query
+@application.route('/search', methods=['POST'])
+def search():
+    search_query = request.get_json(force=True)
+    print(search_query)
+    query_ibm = ibmdiscovery.discovery.query(
+        environment_id = os.environ['ENVIRONMENT_ID'],
+        collection_id = os.environ['TURNERS_COLL_ID'],
+        query = search_query['query'],
+        count = 5
+    )
+    return(jsonify(query_ibm.result))
 
 if __name__ == "__main__":
     application.run(host='127.0.0.1', port=5000, debug=True)

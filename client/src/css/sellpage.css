@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: white;
     background-image: none;
 }
 
@@ -45,58 +45,6 @@ button {
 
 }
 
-#page-links-nav {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    justify-content: space-around;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.page-links-nav-item {
-    border-bottom: 2px solid var(--message-blue-theme);
-    height: 6vh;
-    width: 100%;
-    font-size: 1.7vw;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    cursor: pointer;
-
-
-}
-
-#topnav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: white;
-}
-
-#contact-details-nav {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    gap: 6vw;
-
-    width: 50%;
-    font-size: 1.5vw;
-}
-
-.page-links-nav-item:hover {
-    border-bottom: 2px solid var(--light-blue-theme);
-    background-color: rgba(240, 248, 255, 0.123);
-
-    gap: 6vw;
-}
-
-li a {
-    text-decoration: none;
-    color: inherit;
-    gap: 6vw;
-}
 
 #sell-form {
     display: flex;
@@ -124,7 +72,7 @@ li a {
 
 #sell-form label {
     font-size: 2.5vw;
-    color: white;
+    color: black;
     
 }
 
@@ -158,7 +106,7 @@ li a {
 }
 
 #submit-button {
-    background-color: black;
+    background-color: white;
     width: 30vw;
     height: 5vh;
     font-size: 1.8vw;
@@ -167,7 +115,7 @@ li a {
     font-size: 1.8vw;
     border-radius: 20px;
     border: 2.5px solid var(--light-blue-theme);
-    color: white;
+    color: black;
     margin-top: 2vh;
 }
 

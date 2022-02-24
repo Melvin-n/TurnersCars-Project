@@ -62,37 +62,28 @@ export default function SellPage() {
 
 
   return (
-    <div>
-      <div id='topnav'>
-          <ul id='page-links-nav'>
-              <li className='page-links-nav-item'>Find a car</li>
-              <li className='page-links-nav-item'><a href='/sell'>Sell a car</a></li>
-              <li className='page-links-nav-item'>Live auctions</li>
-          </ul>
-      </div>
-        
-
-          <div id='main-container'>
-            <div id='image-predictor'>
-            <h4>Upload Image</h4>
-              <img src={vehicleImage} id='vehicle-image' alt=''></img>
-              <input id='image-selector' ref={imageSelector} type='file' />
-              <button id='submit-button' onClick={submit}>Submit</button>
-              <button id="predict-button" onClick={predict}>Predict</button>
-            </div>
-            <div id='sell-form'>
-              <label for='type'>Type </label>
-              <input id='vehicle-type' name='type' value={prediction} /> 
-              <label for='make'>Make </label>
-              <input id='vehicle-make' name='make' />
-              <label for='model'>Model </label>
-              <input id='vehicle-model' name='model'/>
-              <label for='color'>Color </label>
-              <input id='vehicle-color' name='color' />
-              <button>Post for auction</button>
-            </div>
-
+      <div>
+        <div id='main-container'>
+          <div id='image-predictor'>
+          <h4>Upload Image</h4>
+            <img src={vehicleImage} id='vehicle-image' alt=''></img>
+            <input id='image-selector' ref={imageSelector} type='file' />
+            <button id='submit-button' onClick={submit}>Submit</button>
+            <button id="predict-button" onClick={predict}>Predict</button>
           </div>
+          <div id='sell-form'>
+            <label for='type'>Type </label>
+            <input id='vehicle-type' name='type' value={prediction} /> 
+            <label for='make'>Make </label>
+            <input id='vehicle-make' name='make' />
+            <label for='model'>Model </label>
+            <input id='vehicle-model' name='model'/>
+            <label for='color'>Color </label>
+            <input id='vehicle-color' name='color' />
+            <button>Post for auction</button>
+          </div>
+
+        </div>
       </div>
         
   )
